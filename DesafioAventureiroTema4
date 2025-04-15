@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+    int main() {
+        // Jogo de batalha naval
+        //  Criar um vetor de char para o tabuleiro.
+        char tabuleiro[10][10];
+        // Inicializar o tabuleiro com '0'.
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                tabuleiro[i][j] = '0';
+            }}
+        // Inserir 4 barcos de tamanho 3 nas posições especificadas.
+        tabuleiro[2][3] = '3';
+        tabuleiro[2][4] = '3';
+        tabuleiro[2][5] = '3';
+        tabuleiro[5][7] = '3';
+        tabuleiro[6][7] = '3';
+        tabuleiro[7][7] = '3';
+        tabuleiro[0][0] = '3';
+        tabuleiro[1][1] = '3';
+        tabuleiro[2][2] = '3';
+        tabuleiro[0][9] = '3';
+        tabuleiro[1][8] = '3';
+        tabuleiro[2][7] = '3';
+        // Exibir o tabuleiro com letras e números e barcos.
+        printf("TABULEIRO DE BATALHA NAVAL:\n");
+        printf("  A B C D E F G H I J\n");
+        for (int i = 0; i < 10; i++) {
+            printf("%d ", i + 1);
+            for (int j = 0; j < 10; j++) {
+                printf("%c ", tabuleiro[i][j]);
+            }printf("\n");
+        }        
+        return 0;
+    }
